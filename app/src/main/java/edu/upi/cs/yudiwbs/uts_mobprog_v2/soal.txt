@@ -1,0 +1,13 @@
+UTS Mobprog.
+
+Kecurangan akan mendapat sanksi sama (nilai E) bagi sumber dan tujuan
+
+- Download, install apk dan pelajari fiturnya.
+
+
+1. (20) tambahkan inisialisasi recylerview di MainActivity (adapter dsb sudah dibuat)
+2. (10) tambahkan toast nim dan nama anda saat menu nim/nama ditap (di MainActivity)
+3. (20) tambahkan tiga nama ke recylerview (bukan db) saat menu "tambah manual" di tap (mainactivity)
+4. (30) lengkapi fitur-fitur di DbMahasiswa: update, delete, getall, hapus dsb.  (DBMahasiswa)
+5. (20) lengkapi saat menu "hapus semua record" ditap (mainactivity)
+

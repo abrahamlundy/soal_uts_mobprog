@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mNimNama"
+        android:title="NimNama"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mTambahManual"
+        android:title="Tambah Manual" />
+    <item
+        android:id="@+id/mTambahDB"
+        android:title="Tambah dari DB" />
+    <item
+        android:id="@+id/mUpdate"
+        android:title="Update" />
+
+    <item
+        android:id="@+id/mHapus"
+        android:title="Hapus" />
+
+    <item
+        android:id="@+id/mHapusSemua"
+        android:title="Hapus Semua Record" />
+
+</menu>
