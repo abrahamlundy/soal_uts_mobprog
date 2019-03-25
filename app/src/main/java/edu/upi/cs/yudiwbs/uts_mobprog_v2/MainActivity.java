@@ -45,26 +45,20 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
+        getSupportActionBar().setTitle("UTS 19/20 1");
 
-
+        //Handling Adapter ke RecycleView
         rvPegawai= findViewById(R.id.rvPegawai);
         rvPegawai.setHasFixedSize(true);
         adapter = new AdapterPegawai(alPegawaiRV);
         lm= new LinearLayoutManager(this);
-        
         rvPegawai.setAdapter(adapter);
         rvPegawai.setLayoutManager(lm);
+        //Ngerefresh Isi
         refreshIsiRV();
-
-        // lengkapi inisialisasi recycle view.
-        // adapter, class pegawai, layout dsb sudah disediakan jadi tidak perlu dibuat
-
-
-
-        //jika sudah selesai dilengkapi panggil ini:
-        //refreshIsiRV();
     }
 
+    //Inflate Menu ke Activity Aktif
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -79,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.mNimNama:
                 Toast.makeText(getApplicationContext(),"Lundy Van Kevin, 1407229", Toast.LENGTH_SHORT).show();
+                //Menampilkan Nama Nim
                 return true;
 
             case R.id.mTambahDB:
@@ -116,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.mHapusSemua:
-               dbPeg.deleteAll();
+                dbPeg.deleteAll();
+                refreshIsiRV();
                 return true;
 
             default:

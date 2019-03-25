@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/mNimNama"
-        android:title="NimNama"
+        android:title="My Id"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/mTambahManual"
